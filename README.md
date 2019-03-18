@@ -6,15 +6,16 @@
 
 
 ## 1.选择4月11日的座次数据，将数据（gpa>=3）填图在10x8的表格中
-      得到结果：
-      平均值 var = 0.6815789
-      方差   mean = 0.95
+     
 
 ![Image text](https://github.com/cuit201608/Team8_coding/blob/master/folder/%E5%9D%90%E6%A0%87%E5%9B%BE.jpg)
       
 ## 2.计算VMR=Var/Mean，选择样方大小为2x2 
-      得到结果：0.7174515
-![Image text ](https://github.com/cuit201608/Team8_coding/blob/master/folder/%E7%BB%93%E6%9E%9C%E5%9B%BE.png)
+      
+      平均值 var = 0.6815789
+      方差   mean = 0.95
+      得到结果：VMR=Var/Mean = 0.7174515
+![Image text ](https://github.com/cuit201608/Team8_coding/blob/master/folder/%E8%BF%87%E7%A8%8B%E5%9B%BE.png)
 
       由图
       
