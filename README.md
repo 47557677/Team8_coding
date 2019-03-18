@@ -7,9 +7,9 @@
 
 ## 1.选择4月11日的座次数据，将数据（gpa>=3）填图在10x8的表格中
       得到结果：
-      var = 0.6815789
-      mean = 0.95
-      VMR=result.area=0.95
+      平均值 var = 0.6815789
+      方差   mean = 0.95
+
 ![Image text](https://github.com/cuit201608/Team8_coding/blob/master/folder/%E5%9D%90%E6%A0%87%E5%9B%BE.jpg)
       
 ## 2.计算VMR=Var/Mean，选择样方大小为2x2 
