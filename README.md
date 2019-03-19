@@ -28,4 +28,7 @@
 ## 4.计算核密度
 
 ![Image text ](https://github.com/cuit201608/Team8_coding/blob/master/folder/%E5%B8%A6%E5%AE%BD%E4%B8%BA%EF%BC%88%E4%B8%80%EF%BC%89.jpeg)![Image text ](https://github.com/cuit201608/Team8_coding/blob/master/folder/%E5%B8%A6%E5%AE%BD%E4%B8%BA%EF%BC%88%E4%B8%80%EF%BC%89%E6%A0%87%E8%AE%B0.jpeg)
+<center class="half">
+    <img src="https://github.com/cuit201608/Team8_coding/blob/master/folder/%E5%B8%A6%E5%AE%BD%E4%B8%BA%EF%BC%88%E4%B8%80%EF%BC%89.jpeg" width="200"/><img src="https://github.com/cuit201608/Team8_coding/blob/master/folder/%E5%B8%A6%E5%AE%BD%E4%B8%BA%EF%BC%88%E4%B8%80%EF%BC%89%E6%A0%87%E8%AE%B0.jpeg" width="200"/>
+</center>
 
