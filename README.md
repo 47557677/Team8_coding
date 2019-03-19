@@ -12,6 +12,7 @@
      fdata=data[c("uid","gpa.all",date)]#选取4月9日的数据
      fdata=fdata[complete.cases(fdata),]#过滤数据为NA的行
 ```
+`fdata=fdata[complete.cases(fdata),]#过滤数据为NA的行`
 
 ![Image text](https://github.com/cuit201608/Team8_coding/blob/master/folder/%E5%AD%A6%E7%94%9F%E5%BA%A7%E6%AC%A1%E8%A1%A8.png)
       
