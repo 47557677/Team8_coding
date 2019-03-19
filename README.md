@@ -8,22 +8,23 @@
 ## 1.数据处理：选择4月11日的座次数据，将数据（gpa>=3）填图在10x8的表格中
 
 ```R
-     data=read.csv("E:/大学/大三下/空间数据/最新课件/实验内容/seat.csv",header=TRUE)#读取数据
-     fdata=data[c("uid","gpa.all",date)]#选取4月11日的数据
-     fdata=fdata[complete.cases(fdata),]#过滤数据为NA的行
+#读取数据
+data=read.csv("E:/大学/大三下/空间数据/最新课件/实验内容/seat.csv",header=TRUE)
+fdata=data[c("uid","gpa.all",date)]#选取4月11日的数据
+fdata=fdata[complete.cases(fdata),]#过滤数据为NA的行
 ```
 
 ```R
-     #创建SpatialPoints
-     seat<-fdata[3]#获取座位编号
-     num<-nrow(seat)#获取需要创建的座位个数
-     seat1<-coordinates(cbind(x=seat[(1:num),1]%%xnum+1,y=seat[(1:num),1]%/%xnum+1))#生成座位
-     seat2<-SpatialPoints(seat1)
-     seat3<-SpatialPointsDataFrame(seat2,fdata[c("gpa.all")])
-     seat4<-as(seat3,"SpatialPixelsDataFrame")#强制转化为SpatialPixelsDataFrame
-     rw.colors<-colorRampPalette(c("grey","red"))
-     dev.new()
-     spplot(subset(seat4,gpa.all>=bestgpa),col.regions=rw.colors(17),scales = list(draw = TRUE),xlab="讲台",main="学生座次表")
+#创建SpatialPoints
+seat<-fdata[3]#获取座位编号
+num<-nrow(seat)#获取需要创建的座位个数
+seat1<-coordinates(cbind(x=seat[(1:num),1]%%xnum+1,y=seat[(1:num),1]%/%xnum+1))#生成座位
+seat2<-SpatialPoints(seat1)
+seat3<-SpatialPointsDataFrame(seat2,fdata[c("gpa.all")])
+seat4<-as(seat3,"SpatialPixelsDataFrame")#强制转化为SpatialPixelsDataFrame
+rw.colors<-colorRampPalette(c("grey","red"))
+dev.new()  #成图
+spplot(subset(seat4,gpa.all>=bestgpa),col.regions=rw.colors(17),scales = list(draw = TRUE),xlab="讲台",main="学生座次表")
 ```
 
 ![Image text](https://github.com/cuit201608/Team8_coding/blob/master/folder/%E5%AD%A6%E7%94%9F%E5%BA%A7%E6%AC%A1%E8%A1%A8.png)
