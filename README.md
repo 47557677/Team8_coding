@@ -26,11 +26,17 @@
       可知，介于均匀分布和随机分布之间,可以归属于随机分布
       
 ## 4.计算核密度
+
      带宽=1
+     
 ![Image text ](https://github.com/cuit201608/Team8_coding/blob/master/folder/%E5%B8%A6%E5%AE%BD%E4%B8%BA%EF%BC%88%E4%B8%80%EF%BC%89.jpeg)![Image text ](https://github.com/cuit201608/Team8_coding/blob/master/folder/%E5%B8%A6%E5%AE%BD%E4%B8%BA%EF%BC%88%E4%B8%80%EF%BC%89%E6%A0%87%E8%AE%B0.jpeg)
- 带宽=2
+
+     带宽=2
+     
 ![Image text ](https://github.com/cuit201608/Team8_coding/blob/master/folder/%E5%B8%A6%E5%AE%BD%E4%B8%BA%EF%BC%88%E4%BA%8C%EF%BC%89.jpeg)![Image text ](https://github.com/cuit201608/Team8_coding/blob/master/folder/%E5%B8%A6%E5%AE%BD%E4%B8%BA%EF%BC%88%E4%BA%8C%EF%BC%89%E6%A0%87%E8%AE%B0.jpeg)
- 带宽=3
+
+     带宽=3
+     
 ![Image text ](https://github.com/cuit201608/Team8_coding/blob/master/folder/%E5%B8%A6%E5%AE%BD%E4%B8%BA%EF%BC%88%E4%B8%89%EF%BC%89.jpeg)![Image text ](https://github.com/cuit201608/Team8_coding/blob/master/folder/%E5%B8%A6%E5%AE%BD%E4%B8%BA%EF%BC%88%E4%B8%89%EF%BC%89%E6%A0%87%E8%AE%B0.jpeg)
 
 
