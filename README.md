@@ -50,7 +50,7 @@ result.area<-var/mean
       
 ![Image text ](https://github.com/cuit201608/Team8_coding/blob/master/folder/%E5%88%86%E5%B8%83%E5%9B%BE.png)
 
-      可知，介于均匀分布和随机分布之间,可以归属于 **随机分布**
+      可知，介于均匀分布和随机分布之间,可以归属于随机分布
       
 ## 4.计算核密度
 
