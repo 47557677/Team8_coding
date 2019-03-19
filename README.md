@@ -1,5 +1,5 @@
 
-# 第一次实验代码及结果说明:
+# 第一次作业代码及结果说明:
 
 
 # 结论VMR=0.7174515，学生座次在4月11日呈现  随机分布
@@ -8,7 +8,7 @@
 ## 1.数据处理：选择4月11日的座次数据，将数据（gpa>=3）填图在10x8的表格中
      
 
-![Image text](https://github.com/cuit201608/Team8_coding/blob/master/folder/%E5%9D%90%E6%A0%87%E5%9B%BE.jpg)
+![Image text](https://github.com/cuit201608/Team8_coding/blob/master/folder/%E5%AD%A6%E7%94%9F%E5%BA%A7%E6%AC%A1%E8%A1%A8.png)
       
 ## 2.选取样方：选择样方大小为2x2 
 
@@ -27,5 +27,8 @@
       
 ## 4.计算核密度
 
-![Image text ](https://github.com/cuit201608/Team8_coding/blob/master/folder/%E6%A0%B8%E5%AF%86%E5%BA%A6%E5%9B%BE%E5%83%8F.jpg)
+<figure class="half">
+    <img src="https://github.com/cuit201608/Team8_coding/blob/master/folder/%E5%B8%A6%E5%AE%BD%E4%B8%BA%EF%BC%88%E4%B8%80%EF%BC%89.jpeg">
+    <img src="https://github.com/cuit201608/Team8_coding/blob/master/folder/%E5%B8%A6%E5%AE%BD%E4%B8%BA%EF%BC%88%E4%B8%80%EF%BC%89%E6%A0%87%E8%AE%B0.jpeg">
+</figure>
 
