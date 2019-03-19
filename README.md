@@ -12,10 +12,8 @@
 data=read.csv("E:/大学/大三下/空间数据/最新课件/实验内容/seat.csv",header=TRUE)
 fdata=data[c("uid","gpa.all",date)]#选取4月11日的数据
 fdata=fdata[complete.cases(fdata),]#过滤数据为NA的行
-```
 
-```R
-#创建SpatialPoints
+#创建SpatialPoints  成图
 seat<-fdata[3]#获取座位编号
 num<-nrow(seat)#获取需要创建的座位个数
 seat1<-coordinates(cbind(x=seat[(1:num),1]%%xnum+1,y=seat[(1:num),1]%/%xnum+1))#生成座位
