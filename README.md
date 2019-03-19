@@ -34,10 +34,14 @@ area<-c(2,1,0,1,0,0,0,1,0,1,2,0,2,0,1,2,1,2,2,1)#每个2x2方格中优秀的个�
 ```
 
 ## 3.计算：计算VMR=Var/Mean
-      
-      平均值 var = 0.6815789
-      方差   mean = 0.95
-      得到结果：VMR=Var/Mean = 0.7174515
+```R
+mean <- mean(area)#平均值
+var<-var(area)#方差
+result.area<-var/mean
+```
+平均值 var = 0.6815789
+方差   mean = 0.95
+得到结果：VMR=Var/Mean = 0.7174515
 ![Image text ](https://github.com/cuit201608/Team8_coding/blob/master/folder/%E8%BF%87%E7%A8%8B%E5%9B%BE.png)
 
       由图
