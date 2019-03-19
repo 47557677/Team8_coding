@@ -39,9 +39,11 @@ mean <- mean(area)#平均值
 var<-var(area)#方差
 result.area<-var/mean
 ```
-平均值 var = 0.6815789
-方差   mean = 0.95
-得到结果：VMR=Var/Mean = 0.7174515
+平均值 var = 0.6815789<br>
+方差   mean = 0.95<br>
+得到结果：VMR=Var/Mean = 0.7174515<br>
+
+
 ![Image text ](https://github.com/cuit201608/Team8_coding/blob/master/folder/%E8%BF%87%E7%A8%8B%E5%9B%BE.png)
 
       由图
