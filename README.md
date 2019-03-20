@@ -53,6 +53,7 @@ result.area<-var/mean
       可知，介于均匀分布和随机分布之间,可以归属于随机分布
       
 ## 4.计算核密度
+![Image text ](https://github.com/cuit201608/Team8_coding/blob/master/folder/%E5%AF%B9%E6%AF%94%E5%9B%BE1.png)
 
 ![Image text ](https://github.com/cuit201608/Team8_coding/blob/master/folder/%E5%AF%B9%E6%AF%94%E5%9B%BE.png)
      带宽=1
