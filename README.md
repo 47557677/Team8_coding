@@ -53,10 +53,79 @@ result.area<-var/mean
 可知，介于均匀分布和随机分布之间,可以归属于随机分布
       
 ## 4.计算核密度
+```R
+#核密度方法
+
+cd<-merge(1:10,1:8)
+cd<-cbind(cd,v=0)#添加一行存储该座位上是不是好学生，初始为0，不是好学生
+
+seat5<-cbind(x=seat[(1:num),1]%%xnum+1,y=seat[(1:num),1]%/%xnum+1)
+seat6<-cbind(seat5,fdata[2])#生成数据框
+for(i in 1:num){
+  #print(seat6[i,])
+  for(p in 1:80){
+    if(seat6[i,][,1]==cd[p,][,1]&seat6[i,][,2]==cd[p,][,2]&seat6[i,][,3]>=bestgpa)
+    {
+      cd[p,][,3]=1
+    }
+  }
+}
+
+cd<-cbind(cd,n=0)#存储带宽为一
+cd<-cbind(cd,n1=0)#存储带宽为二
+cd<-cbind(cd,n2=0)#存储带宽为三
+
+######以下代码需执行三次，并修改dk
+
+dk<-3#定义带宽
+numm<-3
+#进行核密度算法，获取指定带宽周围有多少个好学生
+for(p in 1:80){
+  x=cd[p,][,1]
+  y=cd[p,][,2]
+  v=cd[p,][,numm]
+  for(i in 1:80){
+    if(x==cd[i,][,1]&y+dk==cd[i,][,2]){
+      v=v+cd[i,][,numm]
+    }
+    if(x-dk==cd[i,][,1]&y==cd[i,][,2]){
+      v=v+cd[i,][,numm]
+    }
+    if(x+dk==cd[i,][,1]&y-dk==cd[i,][,2]){
+      v=v+cd[i,][,numm]
+    }
+    if(x+dk==cd[i,][,1]&y==cd[i,][,2]){
+      v=v+cd[i,][,3]
+    }
+    if(x==cd[i,][,1]&y-dk==cd[i,][,2]){
+      v=v+cd[i,][,numm]
+    }
+    if(x-dk==cd[i,][,1]&y+dk==cd[i,][,2]){
+      v=v+cd[i,][,numm]
+    }
+    if(x+dk==cd[i,][,1]&y+dk==cd[i,][,2]){
+      v=v+cd[i,][,numm]
+    }
+    if(x-dk==cd[i,][,1]&y-dk==cd[i,][,2]){
+      v=v+cd[i,][,numm]
+    }
+    cd[p,][,6]=v
+  }
+}
+#将cd转化为空间点或网格并展示
+cds<-coordinates(cd[1:2])
+sp<-SpatialPointsDataFrame(cds,cd[6]/49)
+sp1<-as(sp,"SpatialPixelsDataFrame")#强制转化为SpatialPixelsDataFrame
+rw.colors<-colorRampPalette(c("grey","red"))
+title<-paste("核密度分析结果：带宽为",dk)
+dev.new()
+spplot(sp1,col.regions=rw.colors(17),scales = list(draw = TRUE),xlab='讲台',main=title)#绘制核密度图形
+```
 ![Image text ](https://github.com/cuit201608/Team8_coding/blob/master/folder/%E5%AF%B9%E6%AF%94%E5%9B%BE1.png)
 
 ![Image text ](https://github.com/cuit201608/Team8_coding/blob/master/folder/%E5%AF%B9%E6%AF%94%E5%9B%BE.png)
     
-通过选择三个不同大小的带宽，通过结果分析出：
-"成绩好的同学喜欢坐在教室的中前部分"
+选择三个不同大小的带宽，通过核密度结果分析出：
+
+#成绩好的同学喜欢坐在教室的中前部分
 
