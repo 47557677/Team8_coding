@@ -54,6 +54,7 @@ result.area<-var/mean
       
 ## 4.计算核密度
 
+![Image text ](https://github.com/cuit201608/Team8_coding/blob/master/folder/%E5%AF%B9%E6%AF%94%E5%9B%BE.png)
      带宽=1
      
 ![Image text ](https://github.com/cuit201608/Team8_coding/blob/master/folder/%E5%B8%A6%E5%AE%BD%E4%B8%BA%EF%BC%88%E4%B8%80%EF%BC%89.jpeg)![Image text ](https://github.com/cuit201608/Team8_coding/blob/master/folder/%E5%B8%A6%E5%AE%BD%E4%B8%BA%EF%BC%88%E4%B8%80%EF%BC%89%E6%A0%87%E8%AE%B0.jpeg)
