@@ -127,5 +127,5 @@ spplot(sp1,col.regions=rw.colors(17),scales = list(draw = TRUE),xlab='讲台',ma
     
 选择三个不同大小的带宽，通过核密度结果分析出：
 
-#成绩好的同学喜欢坐在教室的中前部分
+# 成绩好的同学喜欢坐在教室的中前部分
 
