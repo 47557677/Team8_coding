@@ -80,46 +80,28 @@ cd<-cbind(cd,n=0)#存储带宽为一
 cd<-cbind(cd,n1=0)#存储带宽为二
 cd<-cbind(cd,n2=0)#存储带宽为三
 
-######以下代码需执行三次，并修改dk
+######以下代码需执行三次，并修改dk，若需获取带宽大于3的核密度，需添加cd<-cbind(cd,n？=0)
 
 dk<-3#定义带宽
-numm<-3
+numm<-dk+3
 #进行核密度算法，获取指定带宽周围有多少个好学生
 for(p in 1:80){
   x=cd[p,][,1]
   y=cd[p,][,2]
-  v=cd[p,][,numm]
+  v=0
   for(i in 1:80){
-    if(x==cd[i,][,1]&y+dk==cd[i,][,2]){
-      v=v+cd[i,][,numm]
+    x1<-cd[i,][,1]
+    y1<-cd[i,][,2]
+    if((x1-x)^2+(y1-y)^2<=2*dk^2&cd[i,][,3]==1)
+    {
+      v=v+1
     }
-    if(x-dk==cd[i,][,1]&y==cd[i,][,2]){
-      v=v+cd[i,][,numm]
-    }
-    if(x+dk==cd[i,][,1]&y-dk==cd[i,][,2]){
-      v=v+cd[i,][,numm]
-    }
-    if(x+dk==cd[i,][,1]&y==cd[i,][,2]){
-      v=v+cd[i,][,3]
-    }
-    if(x==cd[i,][,1]&y-dk==cd[i,][,2]){
-      v=v+cd[i,][,numm]
-    }
-    if(x-dk==cd[i,][,1]&y+dk==cd[i,][,2]){
-      v=v+cd[i,][,numm]
-    }
-    if(x+dk==cd[i,][,1]&y+dk==cd[i,][,2]){
-      v=v+cd[i,][,numm]
-    }
-    if(x-dk==cd[i,][,1]&y-dk==cd[i,][,2]){
-      v=v+cd[i,][,numm]
-    }
-    cd[p,][,6]=v
+    cd[p,][,numm]=v
   }
 }
 #将cd转化为空间点或网格并展示
 cds<-coordinates(cd[1:2])
-sp<-SpatialPointsDataFrame(cds,cd[6]/49)
+sp<-SpatialPointsDataFrame(cds,cd[numm]/(2*dk+1)^2)
 sp1<-as(sp,"SpatialPixelsDataFrame")#强制转化为SpatialPixelsDataFrame
 rw.colors<-colorRampPalette(c("grey","red"))
 title<-paste("核密度分析结果：带宽为",dk)
