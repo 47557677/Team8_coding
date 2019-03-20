@@ -34,7 +34,7 @@ spplot(subset(seat4,gpa.all>=bestgpa),col.regions=rw.colors(17),scales = list(dr
 area<-c(2,1,0,1,0,0,0,1,0,1,2,0,2,0,1,2,1,2,2,1)#每个2x2方格中优秀的个数
 ```
 
-## 3.计算：计算VMR=Var/Mean
+## 3.计算：计算VMR=Var/Mean，得出结论
 ```R
 mean <- mean(area)#平均值
 var<-var(area)#方差
