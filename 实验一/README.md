@@ -127,9 +127,11 @@ title<-paste("核密度分析结果：带宽为",dk)
 dev.new()
 spplot(sp1,col.regions=rw.colors(17),scales = list(draw = TRUE),xlab='讲台',main=title)#绘制核密度图形
 ```
-![Image text ](https://github.com/cuit201608/Team8_coding/blob/master/%E5%AE%9E%E9%AA%8C%E4%B8%80/folder/%E5%AF%B9%E6%AF%94%E5%9B%BE.png)
 
 ![Image text ](https://github.com/cuit201608/Team8_coding/blob/master/%E5%AE%9E%E9%AA%8C%E4%B8%80/folder/%E5%AF%B9%E6%AF%94%E5%9B%BE1.png)
+
+![Image text ](https://github.com/cuit201608/Team8_coding/blob/master/%E5%AE%9E%E9%AA%8C%E4%B8%80/folder/%E5%AF%B9%E6%AF%94%E5%9B%BE.png)
+
     
 选择三个不同大小的带宽，通过核密度结果分析出：
 
