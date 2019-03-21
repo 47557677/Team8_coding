@@ -26,7 +26,7 @@ dev.new()
 spplot(subset(seat4,gpa.all>=bestgpa),col.regions=rw.colors(17),scales = list(draw = TRUE),xlab="讲台",main="学生座次表")
 ```
 
-![Image text](https://github.com/cuit201608/Team8_coding/blob/master/folder/%E5%AD%A6%E7%94%9F%E5%BA%A7%E6%AC%A1%E8%A1%A8.png)
+![Image text](https://github.com/cuit201608/Team8_coding/blob/master/%E5%AE%9E%E9%AA%8C%E4%B8%80/folder/%E5%AD%A6%E7%94%9F%E5%BA%A7%E6%AC%A1%E8%A1%A8.png)
       
 ## 2.选取样方：选择样方大小为2x2 
 ```R
