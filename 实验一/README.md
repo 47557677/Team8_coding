@@ -45,18 +45,19 @@ result.area<-var/mean
 得到结果：VMR=Var/Mean = 0.7174515<br>
 
 
-![Image text ](https://github.com/cuit201608/Team8_coding/blob/master/folder/%E8%BF%87%E7%A8%8B%E5%9B%BE.png)
+![Image text ](https://github.com/cuit201608/Team8_coding/blob/master/%E5%AE%9E%E9%AA%8C%E4%B8%80/folder/%E8%BF%87%E7%A8%8B%E5%9B%BE.png)
+
 
 由图
       
-![Image text ](https://github.com/cuit201608/Team8_coding/blob/master/folder/%E5%88%86%E5%B8%83%E5%9B%BE.png)
+![Image text ](https://github.com/cuit201608/Team8_coding/blob/master/%E5%AE%9E%E9%AA%8C%E4%B8%80/folder/%E5%88%86%E5%B8%83%E5%9B%BE.png)
 
 可知，介于均匀分布和随机分布之间,可以归属于:
 # 随机分布
       
 ## 4.计算核密度
-![Image text ](https://github.com/cuit201608/Team8_coding/blob/master/folder/%E6%A0%B8%E5%AF%86%E5%BA%A6%E5%88%86%E6%9E%90%E8%B5%84%E6%96%991.jpg)
-![Image text ](https://github.com/cuit201608/Team8_coding/blob/master/folder/%E6%A0%B8%E5%AF%86%E5%BA%A6%E5%88%86%E6%9E%90%E8%B5%84%E6%96%992.jpg)
+![Image text ](https://github.com/cuit201608/Team8_coding/blob/master/%E5%AE%9E%E9%AA%8C%E4%B8%80/folder/%E6%A0%B8%E5%AF%86%E5%BA%A6%E5%88%86%E6%9E%90%E8%B5%84%E6%96%991.jpg)
+![Image text ](https://github.com/cuit201608/Team8_coding/blob/master/%E5%AE%9E%E9%AA%8C%E4%B8%80/folder/%E6%A0%B8%E5%AF%86%E5%BA%A6%E5%88%86%E6%9E%90%E8%B5%84%E6%96%992.jpg)
 
 ```R
 #核密度方法
@@ -126,9 +127,9 @@ title<-paste("核密度分析结果：带宽为",dk)
 dev.new()
 spplot(sp1,col.regions=rw.colors(17),scales = list(draw = TRUE),xlab='讲台',main=title)#绘制核密度图形
 ```
-![Image text ](https://github.com/cuit201608/Team8_coding/blob/master/folder/%E5%AF%B9%E6%AF%94%E5%9B%BE1.png)
+![Image text ](https://github.com/cuit201608/Team8_coding/blob/master/%E5%AE%9E%E9%AA%8C%E4%B8%80/folder/%E5%AF%B9%E6%AF%94%E5%9B%BE.png)
 
-![Image text ](https://github.com/cuit201608/Team8_coding/blob/master/folder/%E5%AF%B9%E6%AF%94%E5%9B%BE.png)
+![Image text ](https://github.com/cuit201608/Team8_coding/blob/master/%E5%AE%9E%E9%AA%8C%E4%B8%80/folder/%E5%AF%B9%E6%AF%94%E5%9B%BE1.png)
     
 选择三个不同大小的带宽，通过核密度结果分析出：
 
